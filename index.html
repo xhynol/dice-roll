@@ -1,0 +1,79 @@
+<!-- classwork2
+  Ying Jiang
+  8 _ web development
+  Mr.Irimina
+  10/4
+  Classwork
+  
+  Some of the code didn't work and it was hard to find the bug. If I made a mistake it would affect my whole entire code. I noticed I used the table a lot and it helpped me a lot. Most of the code was already practiced skills. The enhancement I did was to make the pictures clickable-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload = "initialize();">
+    <h1> Roll Roll Roll Your Dice</h1>
+    <form id = "diceThing">
+      pick the number of dice
+      <div class = "dices">
+        <div class = "dice" id = "1">
+          <img class = "d" src="Dice 1.png">
+        </div>
+        <div class = "dice" id = "2">
+          <img class = "d" src="Dice 2.png">
+        </div>
+        <div class = "dice" id ="3">
+          <img class = "d" src="Dice 3.png">
+        </div>
+      </div>
+      
+      <br />
+      Number of rolls: <input name = "roll" type = "number" />
+      <div id = "warning"></div>
+    </form>
+    
+    <div id = "button">
+    <button onclick = "recordData();" class = "button">ok</button>
+    </div>
+    
+    <table id = "roll" class = "center">
+      <tr>
+        <th>Rolls</th>
+        <th>Mean</th>
+        <th>Mode</th>
+        <th>Median</th>
+      </tr>
+      <tr >
+        <td id = "rollz">0</td>
+        <td id = "meanz">n/a</td>
+        <td id = "modez">n/a</td>
+        <td id = "medianz">n/a</td>
+      </tr>
+    </table>
+
+  
+    <br />
+    
+   
+        <table id = "results" class = "center">
+          <tr  id = "resultz">
+            <th colspan = "2">Results</th>
+            
+          </tr>
+        
+          
+        </table>
+  
+   
+    
+  
+    <script src="script.js">
+  </script>
+  </body>
+  <style>
+
+</style>
+</html>
